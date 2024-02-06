@@ -3,7 +3,7 @@ import knex from "../config/database.js";
 const getAllergyIntolerance = async () => {
   
   // Get data his
-  // const data = await knex.raw("SELECT * FROM ... limit 10").debug(false);
+  // const data = await knex.raw("SELECT * FROM ... limit 10");
 
   let AllergyIntoleranceOpject = {
     managingOrganization: {
