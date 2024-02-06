@@ -1,8 +1,11 @@
 import knex from "../config/database.js";
 
 const getAllergyIntolerance = async () => {
+  
+  // Get data his
   // const data = await knex.raw("SELECT * FROM ... limit 10").debug(false);
-  return AllergyIntoleranceOpject = {
+
+  let AllergyIntoleranceOpject = {
     managingOrganization: {
       type: "Organization",
       identifier: {
@@ -47,7 +50,8 @@ const getAllergyIntolerance = async () => {
     code: {
       coding: [
         {
-          system: "https://phr1.moph.go.th/api/CodingSystem?System=tmt_substance",
+          system:
+            "https://phr1.moph.go.th/api/CodingSystem?System=tmt_substance",
           code: "579224",
           display: "PENICILLIN G SODIUM",
         },
@@ -66,7 +70,8 @@ const getAllergyIntolerance = async () => {
     allergyGroup: {
       coding: [
         {
-          system: "https://phr1.moph.go.th/api/CodingSystem?System=allergy_group",
+          system:
+            "https://phr1.moph.go.th/api/CodingSystem?System=allergy_group",
           code: "1",
           display: "Cardiovascular diaorder",
         },
@@ -126,6 +131,8 @@ const getAllergyIntolerance = async () => {
       },
     ],
   };
+
+  return AllergyIntoleranceOpject;
 };
 
 export { getAllergyIntolerance };

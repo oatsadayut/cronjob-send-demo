@@ -10,4 +10,4 @@ import { sendAllergyIntolerance } from "./src/controllers/phrController.js";
             // # │ │ │ │ │ │
             // # │ │ │ │ │ │
             // # * * * * * *
-cron.schedule("*/50 * * * * *",() => new Promise(sendAllergyIntolerance())); // 50 วินาที
+cron.schedule("*/5 * * * * *",() => new Promise(sendAllergyIntolerance())); // 5 วินาที
