@@ -1,7 +1,7 @@
 import axios from "axios";
 import 'dotenv/config'
 
-const API_SERVICE = process.env.API;
+const API_SERVICE = process.env.API_SERVICE;
 const AUTH_TOKEN = process.env.TOKEN;
 
 const http = axios.create({
