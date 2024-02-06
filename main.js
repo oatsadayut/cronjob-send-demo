@@ -1,5 +1,5 @@
 import cron from "node-cron";
-import { sendData } from "./src/controllers/phr.js";
+import { sendAllergyIntolerance } from "./src/controllers/phrController.js";
 
             // # ┌────────────── second (optional)
             // # │ ┌──────────── minute
@@ -10,4 +10,4 @@ import { sendData } from "./src/controllers/phr.js";
             // # │ │ │ │ │ │
             // # │ │ │ │ │ │
             // # * * * * * *
-cron.schedule("*/3 * * * * *",() => new Promise(sendData())); // 3 วินาที
+cron.schedule("*/3 * * * * *",() => new Promise(sendAllergyIntolerance())); // 3 วินาที

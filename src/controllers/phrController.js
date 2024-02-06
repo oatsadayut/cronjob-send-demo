@@ -1,8 +1,8 @@
 import { http } from "../config/http.js";
-import { getPatient } from "../services/phr.js";
+import { getPatient } from "../services/phrService.js";
 import { AllergyIntoleranceOpject } from "../models/allergyIntolerance.js";
 
-const sendData = async () => {
+const sendAllergyIntolerance = async () => {
   try {
     console.log(AllergyIntoleranceOpject)
   } catch (error) {
@@ -10,4 +10,4 @@ const sendData = async () => {
   }
 };
 
-export { sendData };
+export { sendAllergyIntolerance };
