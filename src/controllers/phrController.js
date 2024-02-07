@@ -13,7 +13,7 @@ const sendPatientData = async () => {
 
     const res = await http.post("{* api path *}", payload);
     const result = res.data;
-    console.log(payload);
+    console.log(result);
 
   } catch (error) {
     console.error(error.message);
