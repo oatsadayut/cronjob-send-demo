@@ -1,5 +1,5 @@
 import cron from "node-cron";
-import { sendAllergyIntolerance } from "./src/controllers/phrController.js";
+import { sendPatientData } from "./src/controllers/phrController.js";
 
             // # ┌────────────── second (optional)
             // # │ ┌──────────── minute
@@ -10,4 +10,4 @@ import { sendAllergyIntolerance } from "./src/controllers/phrController.js";
             // # │ │ │ │ │ │
             // # │ │ │ │ │ │
             // # * * * * * *
-cron.schedule("*/5 * * * * *",() => new Promise(sendAllergyIntolerance())); // 5 วินาที
+cron.schedule("*/5 * * * * *", () => new Promise(sendPatientData())); // 5 วินาที
