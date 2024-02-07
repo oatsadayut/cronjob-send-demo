@@ -13,6 +13,12 @@ const sendPatientData = async () => {
 
     const res = await http.post("{* api path *}", payload);
     const result = res.data;
+  
+    // Check response code status
+    // if(res.status === 200){
+    //    ... Do summing
+    // }
+
     console.log(result);
 
   } catch (error) {
